@@ -1,0 +1,512 @@
+pollutantmean("specdata", "nitrate", 70:72)
+print("correct answer: 1.706")
+pollutantmean("specdata", "nitrate", 23)
+print("correct answer: 1.281")
+}
+test_out
+test_out()
+test_out <-function()
+{
+test1 <- pollutantmean("specdata", "sulfate", 1:10)
+print("correct answer: 4.064, returned: ", test1)
+test2 <- pollutantmean("specdata", "nitrate", 70:72)
+print("correct answer: 1.706, returned: ", test 2)
+test_out <-function()
+{
+test1 <- pollutantmean("specdata", "sulfate", 1:10)
+print("correct answer: 4.064, returned: ", test1)
+test2 <- pollutantmean("specdata", "nitrate", 70:72)
+print("correct answer: 1.706, returned: ", test 2)
+test_out <-function()
+{
+test1 <- pollutantmean("specdata", "sulfate", 1:10)
+print("correct answer: 4.064, returned: ", test1)
+test2 <- pollutantmean("specdata", "nitrate", 70:72)
+print("correct answer: 1.706, returned: ", test2)
+test3 <- pollutantmean("specdata", "nitrate", 23)
+print("correct answer: 1.281, returned: ", test3)
+return(c(test1, test2, test3))
+}
+test_out()
+remove(pollutantmean, lpad)
+source("pollutantmean.R")
+test_out()
+history
+save.history
+history.save
+apropos(history)
+?history
+savehistory(file ="n.Rhistory")
+source("pollutantmean.R")
+source("pollutantmean.R")
+source("pollutantmean.R")
+remove test_out
+remove( test_out, lpad, pollutantmean)
+source("pollutantmean.R")
+test_out
+test_out()
+remove( test_out, lpad, pollutantmean)
+source("pollutantmean.R")
+remove( test_out, lpad, pollutantmean)
+source("pollutantmean.R")
+test_out()
+?mean
+1/0.859954711673699
+1/0.549909836065574
+remove( test_out, lpad, pollutantmean)
+View(fixdata)
+mean((fixdata[,2])[!bad])
+mean((fixdata[,3])[!bad])
+mean((fixdata[,"nitrate"])[!bad])
+mean((fixdata[,"sulfate"])[!bad])
+remove( test_out, lpad, pollutantmean)
+source("pollutantmean.R")
+test_out()
+remove( test_out, lpad, pollutantmean)
+source("pollutantmean.R")
+test_out()
+remove( test_out, lpad, pollutantmean)
+source("pollutantmean.R")
+test_out()
+((read.csv(paste0(directory,"/",lpad(23,3),".csv")))[pollutant])[,pollutant]
+fixdata <- ((read.csv(paste0(directory,"/",lpad(23,3),".csv")))[pollutant])[,pollutant]
+head(fixdata)
+bad <- is.na(datavect)
+bad <- is.na(fixdata)
+mean(fixdata[!bad])
+pollutant <- "nitrate"
+fixdata <- ((read.csv(paste0(directory,"/",lpad(23,3),".csv")))[pollutant])[,pollutant]
+bad <- is.na(fixdata)
+mean(fixdata[!bad])
+remove(pollutant)
+test_out()
+remove(pollutant)
+remove( test_out, lpad, pollutantmean)
+source("pollutantmean.R")
+test_out()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+head(fixdata[!is.na(fixdata)])
+head(fixdata)
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+fixdata <- ((read.csv(paste0(directory,"/",lpad(23,3),".csv")))["nitrate"])[,"nitrate"]
+head(fixdata)
+bad <- is.na(fixdata)
+mean(fixdata[!bad])
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+pollutantmean("specdata", "sulfate", 23)
+pollutantmean("specdata", "nitrate", 23)
+pollutantmean("specdata", "baudrate", 23)
+fixdata <- ((read.csv(paste0(directory,"/",lpad(23,3),".csv")))["nitrate"])[,"nitrate"]
+bad <- is.na(fixdata)
+mean(fixdata[!bad])
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+pollutantmean("specdata", "baudrate", 23)
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+pollutantmean("specdata", "baudrate", 23)
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+pollutantmean("specdata", "baudrate", 23)
+pollutantmean("specdata", "nitrate", 23)
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out
+test_out()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+pollutantmean("specdata", "sulfate", 1:10)
+apropos(precision)
+ls()
+vect <- ls()
+vect
+for(a in vect)
+{remove(a)}
+ls()
+remove( bad, directory, fixdata, )
+remove( bad, directory, fixdata )
+remove( "bad", "directory", "fixdata" )
+ls()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+?format
+n <- 1.280833333333333333333
+format(n, width = 4)
+format(n, width = 3)
+format(n, width = 2)
+format(n, width = 1)
+n
+n <- "1.280833333333333333333"
+format(n, width = 2)
+format(n, digits = 2)
+n <- "1.280833333333333333333"
+n <- 1.280833333333333333333
+format(n, digits = 2)
+format(n, digits = 4)
+test_out
+test_out()
+pollutantmean("specdata", "sulfate", 1:10)
+format(pollutantmean("specdata","sulfate", 1:10), digits = 4)
+n <-4
+n <-4L
+format(n, width = 3)
+format(n, width = 3, zero.print = T)
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+pollutantmean("specdata", "sulfate", 1:10)
+pollutantmean("specdata", "nitrate", 23)
+pollutantmean("specdata", "nitrate", 70:73)
+pollutantmean("specdata", "nitrate", 70:72)
+pollutantmean("specdata", "nitrate", 70:71)
+pollutantmean("specdata", "nitrate", 70:72)
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+pollutantmean("specdata", "nitrate", 70:72)
+test_out()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+newdata<-na.omit(read.csv(paste0(directory,"/",names[i],".csv")))[pollutant]
+pollutant<-"sulfate"
+newdata<-na.omit(read.csv(paste0(directory,"/",names[i],".csv")))[pollutant]
+directory <-"specdata"
+i<1
+i<-1
+newdata<-na.omit(read.csv(paste0(directory,"/",names[i],".csv")))[pollutant]
+newdata<-na.omit(read.csv(paste0(directory,"/",lpad(i,3),".csv")))[pollutant]
+newdata
+newdata <-NULL
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+id <- 70:72
+for ( i in id)
+{
+newdata<-na.omit(read.csv(paste0(directory,"/",lpad(i,3),".csv")))[pollutant]
+vector <- cbind(vector, newdata)
+}
+for ( i in id)
+{
+newdata <- (na.omit(read.csv(paste0(directory,"/",lpad(i,3),".csv")))[pollutant])[,pollutant]
+datavect <-c(datavect, newdata)
+}
+datavect <-NULL
+newdata <-NULL
+for ( i in id)
+{
+newdata <- (na.omit(read.csv(paste0(directory,"/",lpad(i,3),".csv")))[pollutant])[,pollutant]
+datavect <-c(datavect, newdata)
+}
+head(datavect)
+datavect
+mean(datavect)
+pollutant <- "nitrate"
+id
+for ( i in id) {
+newdata <- (na.omit(read.csv(paste0(directory,"/",lpad(i,3),".csv")))[pollutant])[,pollutant]
+datavect <-NULL ; newdata <- NULL \
+datavect <-NULL ; newdata <- NULL
+for ( i in id) {
+newdata <- (na.omit(read.csv(paste0(directory,"/",lpad(i,3),".csv")))[pollutant])[,pollutant]
+datavect <-c(datavect, newdata) } ; mean(datavect)
+i
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+datavect
+str(datavect)
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+?mean
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+pollutantmean(directory, pollutant, 70:72)
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+datavect <-NULL ; newdata <- NULL ; for (i in id) {
+newdata <- (na.omit(read.csv(paste0(directory,"/",lpad(i,3),".csv")))[pollutant])[,pollutant]
+datavect <-c(datavect, newdata) } ; mean(datavect)
+range(datavect)
+min(datavect)
+max(datavect)
+datavect <-NULL ; newdata <- NULL ; for (i in id) {newdata <- ((read.csv(paste0(directory,"/",lpad(i,3),".csv")))[pollutant])[,pollutant] ; datavect <-c(datavect, newdata) } ; mean(datavect, na.rm = T)
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out
+test_out()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_out()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+remove("test_out")
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_pollutantmean()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_pollutantmean()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_pollutantmean()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_pollutantmean()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_pollutantmean()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_pollutantmean()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_pollutantmean()
+rangevect<-1:10
+arguments <- c("specdata", "sulfate", rangevect)
+pollutantmean(arguments)
+arguments
+arguments <- list("specdata", "sulfate", rangevect)
+arguments
+pollutantmean(arguments)
+pollutantmean(arguments[1])
+pollutantmean(arguments[1])
+arguments[1]
+arguments[1:3]
+arguments[[1]]
+arguments[1,] <- data.frame("specdata", "sulfate", rangevect)
+arguments[1,] <- table("specdata", "sulfate", rangevect)
+arguments <- table("specdata", "sulfate", rangevect)
+arguments <- ("specdata", "sulfate", rangevect)
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+test_pollutantmean()
+lpad(99,5)
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+lpad_test
+test_lpad()
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+source('~/Projects/Rstudio/rprogramming/pollutantmean.R')
+?read.fwf
+i <- read.csv("completetest1.csv")
+i
+i <- read.csv("completetest1.csv")
+i
+i <- read.csv("completetest1.csv")
+i
+ls()
+remove("arguments", "datavect", "lpad","n","pollutant","test_lpad", "rangevect","vect")
+dir(directory)
+files <- dir(directory)
+files
+comp_file <- read.csv(files[1])
+files[1]
+paste0(directory,"1",files[1])
+paste0(directory,"/",files[1])
+filename <- paste0(directory,"/",files[1])
+comp_file <- read.csv(filename)
+View(comp_file)
+sulf_na <- is.na(comp_file["sulfate"])
+sulf_val <- (comp_file["sulfate"])[!sulf_na]
+nite_na <- is.na(comp_file["nitrate"])
+nite_val <- (comp_file["sulfate"])[!nite_na]
+length(nite_val)
+length(sulf_val)
+if(length(sulf_val)<=length(nite_val)) length(sulf_val) else length(nite_val)
+paste0(directory,"/",files[3])
+comp_file <- read.csv(filename)
+View(comp_file)
+sulf_na <- is.na(comp_file["sulfate"])
+sulf_val <- (comp_file["sulfate"])[!sulf_na]
+nite_na <- is.na(comp_file["nitrate"])
+nite_val <- (comp_file["sulfate"])[!nite_na]
+if(length(sulf_val)<=length(nite_val)) length(sulf_val) else length(nite_val)
+files[3]
+filename <- paste0(directory,"/",files[3])
+comp_file <- read.csv(filename)
+sulf_na <- is.na(comp_file["sulfate"])
+sulf_val <- (comp_file["sulfate"])[!sulf_na]
+nite_na <- is.na(comp_file["nitrate"])
+nite_val <- (comp_file["sulfate"])[!nite_na]
+if(length(sulf_val)<=length(nite_val)) length(sulf_val) else length(nite_val)
+i <- 1:332
+comp <- function(directory, id = 1:332)
+{
+for(i in id){  }
+comp <- function(directory, id = 1:332)
+{
+for(i in id)
+{
+filename <- paste0(directory,"/",files[i])
+comp_file <- read.csv(filename)
+sulf_na <- is.na(comp_file["sulfate"])
+sulf_val <- (comp_file["sulfate"])[!sulf_na]
+nite_na <- is.na(comp_file["nitrate"])
+nite_val <- (comp_file["sulfate"])[!nite_na]
+if(length(sulf_val)<=length(nite_val)) outstring<-c(i, sulf_val) else outstring<- c(i, nite_val)
+print(outstring)
+}
+}
+comp(directory, 1)
+View(comp)
+comp <- function(directory, id = 1:332)
+{
+for(i in id)
+{
+filename <- paste0(directory,"/",files[i])
+comp_file <- read.csv(filename)
+sulf_na <- is.na(comp_file["sulfate"])
+sulf_val <- (comp_file["sulfate"])[!sulf_na]
+nite_na <- is.na(comp_file["nitrate"])
+nite_val <- (comp_file["sulfate"])[!nite_na]
+if(length(sulf_val)<=length(nite_val)) outstring<-c(i, length(sulf_val) else outstring<- c(i, length(nite_val)
+print(outstring)
+}
+}
+comp <- function(directory, id = 1:332)
+{
+for(i in id)
+{
+filename <- paste0(directory,"/",files[i])
+comp_file <- read.csv(filename)
+sulf_na <- is.na(comp_file["sulfate"])
+sulf_val <- (comp_file["sulfate"])[!sulf_na]
+nite_na <- is.na(comp_file["nitrate"])
+nite_val <- (comp_file["sulfate"])[!nite_na]
+if(length(sulf_val)<=length(nite_val)) outstring<-c(i, length(sulf_val) else outstring<- c(i, length(nite_val)
+print(outstring)
+}
+}
+comp <- function(directory, id = 1:332)
+{
+for(i in id)
+{
+filename <- paste0(directory,"/",files[i])
+comp_file <- read.csv(filename)
+sulf_na <- is.na(comp_file["sulfate"])
+sulf_val <- (comp_file["sulfate"])[!sulf_na]
+nite_na <- is.na(comp_file["nitrate"])
+nite_val <- (comp_file["sulfate"])[!nite_na]
+if(length(sulf_val)<=length(nite_val)) outstring<-c(i, length(sulf_val) else outstring<- c(i, length(nite_val))
+print(outstring)
+}
+}
+comp <- function(directory, id = 1:332)
+{
+for(i in id)
+{
+filename <- paste0(directory,"/",files[i])
+comp_file <- read.csv(filename)
+sulf_na <- is.na(comp_file["sulfate"])
+sulf_val <- (comp_file["sulfate"])[!sulf_na]
+nite_na <- is.na(comp_file["nitrate"])
+nite_val <- (comp_file["sulfate"])[!nite_na]
+if(length(sulf_val)<=length(nite_val)) outstring<-c(i, length(sulf_val)) else outstring<- c(i, length(nite_val))
+print(outstring)
+}
+}
+comp(directory, 1)
+comp(directory, 3)
+for( g in c(2, 4, 8, 10, 12)){ comp(directory, g)}
+for( g in 30:25){ comp(directory, g)}
+v <- c(2, 4, 8, 10, 12)
+for( g in v){ comp(directory, g)}
+function comp
+function(comp)
+comp
+?savehistory
+dir()
+read.csv("completetest2.csv")
+sensors <-c(2, 4, 8, 10, 12)
+nobs <- c(1041, 474, 192, 148, 96)
+testframe <- data.frame(id = sensors, nobs = nobs)
+testframe
+read.csv("completetest2.csv")
+if( read.csv("completetest2.csv") == testframe ) print("success")
+if( read.csv("completetest2.csv") == testframe )) print("success")
+if( read.csv("completetest2.csv") == testframe )) print("success"
+if( read.csv("completetest2.csv") == testframe )) print("success")
+if( read.csv("completetest2.csv") == testframe ) print("success")
+compare <- function(directory, id=1:332)
+{
+out_nobs <- null
+for(i in id)
+{
+filename <- paste0(directory,"/",files[i])
+comp_file <- read.csv(filename)
+sulf_na <- is.na(comp_file["sulfate"])
+sulf_val <- (comp_file["sulfate"])[!sulf_na]
+nite_na <- is.na(comp_file["nitrate"])
+nite_val <- (comp_file["sulfate"])[!nite_na]
+##    if(length(sulf_val)<=length(nite_val)) outstring<-c(i, length(sulf_val)) else outstring<- c(i, length(nite_val))
+##    print(outstring)
+if(length(sulf_val)<=length(nite_val)) out_nobs <-c(out_nobs, length(sulf_val)) else out_nobs <- c(out_nobs, length(nite_val))
+}
+output <-data.frame(id = id, nobs = out_nobs)
+return(output)
+}
+compare(directory, 1)
+source("compare.R")
+source("complete.R")
+complete(directory, 1)
+complete(directory, 30:25)
+complete(directory, c(2, 4, 8, 10, 12))
+complete(directory, 3)
+test_complete
+test_complete()
+source("complete.R")
+test_complete()
+source("complete.R")
+test_complete()
+source("complete.R")
+test_complete()
+?cat
+cat(testframe)
+format(testframe)
+source("complete.R")
+test_complete()
+source('~/Projects/Rstudio/rprogramming/complete.R')
+test_complete()
+source('~/Projects/Rstudio/rprogramming/complete.R')
+test_complete()
+source('~/Projects/Rstudio/rprogramming/complete.R')
+source('~/Projects/Rstudio/rprogramming/complete.R')
+source('~/Projects/Rstudio/rprogramming/complete.R')
+test_complete()
+source('~/Projects/Rstudio/rprogramming/complete.R')
+source('~/Projects/Rstudio/rprogramming/complete.R')
+source('~/Projects/Rstudio/rprogramming/complete.R')
+source('~/Projects/Rstudio/rprogramming/complete.R')
+test_complete()
+source('~/Projects/Rstudio/rprogramming/complete.R')
+source('~/Projects/Rstudio/rprogramming/complete.R')
+test_complete()
+source('~/Projects/Rstudio/rprogramming/complete.R')
+source('~/Projects/Rstudio/rprogramming/complete.R')
+source('~/Projects/Rstudio/rprogramming/complete.R')
+source('~/Projects/Rstudio/rprogramming/complete.R')
+test_complete()
+savehistory("m.Rhist")
+source('~/Projects/Rstudio/rprogramming/complete.R')
+source('~/Projects/Rstudio/rprogramming/complete.R')
+test_complete()
+remove("comp", "compare", "files", "sensors", "sulf_val")
+remove("v","nobs","newdata","nite_val")
+remove("i", "id", "g", "filename", "directory")
+ls()
+remove("comp_file", "nite_na")
+remove("sulf_na")
+ls()
+source('~/Projects/Rstudio/rprogramming/complete.R')
+test_complete()
+source('~/Projects/Rstudio/rprogramming/complete.R')
+savehistory("o.Rhist")

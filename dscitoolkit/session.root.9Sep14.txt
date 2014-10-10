@@ -1,0 +1,1001 @@
+> biocLite(c("GenomicFeatures", "AnnotationDbi"))
+Error: could not find function "biocLite"
+> biocLite()
+Error: could not find function "biocLite"
+> library(biocLite)
+Error in library(biocLite) : there is no package called ¡biocLite¢
+> source("http://bioconductor.org/biocLite.R")
+Bioconductor version 2.14 (BiocInstaller 1.14.2),
+  ?biocLite for help
+> biocLite()
+BioC_mirror: http://bioconductor.org
+Using Bioconductor version 2.14 (BiocInstaller 1.14.2),
+  R version 3.1.1.
+> biocLite(c("GenomicFeatures", "AnnotationDbi"))
+BioC_mirror: http://bioconductor.org
+Using Bioconductor version 2.14 (BiocInstaller 1.14.2),
+  R version 3.1.1.
+Installing package(s) 'GenomicFeatures' 'AnnotationDbi'
+also installing the dependencies ¡base64enc¢, ¡iterators¢, ¡checkmate¢, ¡sendmailR¢, ¡brew¢, ¡fail¢, ¡foreach¢, ¡BatchJobs¢, ¡BBmisc¢, ¡BiocParallel¢, ¡XVector¢, ¡zlibbioc¢, ¡XML¢, ¡BSgenome¢, ¡Rsamtools¢, ¡GenomicAlignments¢, ¡GenomicRanges¢, ¡Biostrings¢, ¡rtracklayer¢, ¡biomaRt¢
+
+trying URL 'http://cran.rstudio.com/src/contrib/base64enc_0.1-2.tar.gz'
+Content type 'application/x-gzip' length 6407 bytes
+opened URL
+==================================================
+downloaded 6407 bytes
+
+trying URL 'http://cran.rstudio.com/src/contrib/iterators_1.0.7.tar.gz'
+Content type 'application/x-gzip' length 289453 bytes (282 Kb)
+opened URL
+==================================================
+downloaded 282 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/checkmate_1.4.tar.gz'
+Content type 'application/x-gzip' length 46961 bytes (45 Kb)
+opened URL
+==================================================
+downloaded 45 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/sendmailR_1.1-2.tar.gz'
+Content type 'application/x-gzip' length 7071 bytes
+opened URL
+==================================================
+downloaded 7071 bytes
+
+trying URL 'http://cran.rstudio.com/src/contrib/brew_1.0-6.tar.gz'
+Content type 'application/x-gzip' length 83315 bytes (81 Kb)
+opened URL
+==================================================
+downloaded 81 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/fail_1.2.tar.gz'
+Content type 'application/x-gzip' length 10599 bytes (10 Kb)
+opened URL
+==================================================
+downloaded 10 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/foreach_1.4.2.tar.gz'
+Content type 'application/x-gzip' length 359739 bytes (351 Kb)
+opened URL
+==================================================
+downloaded 351 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/BatchJobs_1.3.tar.gz'
+Content type 'application/x-gzip' length 98007 bytes (95 Kb)
+opened URL
+==================================================
+downloaded 95 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/BBmisc_1.7.tar.gz'
+Content type 'application/x-gzip' length 74502 bytes (72 Kb)
+opened URL
+==================================================
+downloaded 72 Kb
+
+trying URL 'http://bioconductor.org/packages/2.14/bioc/src/contrib/BiocParallel_0.6.1.tar.gz'
+Content type 'application/x-gzip' length 296525 bytes (289 Kb)
+opened URL
+==================================================
+downloaded 289 Kb
+
+trying URL 'http://bioconductor.org/packages/2.14/bioc/src/contrib/XVector_0.4.0.tar.gz'
+Content type 'application/x-gzip' length 53465 bytes (52 Kb)
+opened URL
+==================================================
+downloaded 52 Kb
+
+trying URL 'http://bioconductor.org/packages/2.14/bioc/src/contrib/zlibbioc_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 257310 bytes (251 Kb)
+opened URL
+==================================================
+downloaded 251 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/XML_3.98-1.1.tar.gz'
+Content type 'application/x-gzip' length 1582216 bytes (1.5 Mb)
+opened URL
+==================================================
+downloaded 1.5 Mb
+
+trying URL 'http://bioconductor.org/packages/2.14/bioc/src/contrib/BSgenome_1.32.0.tar.gz'
+Content type 'application/x-gzip' length 539752 bytes (527 Kb)
+opened URL
+==================================================
+downloaded 527 Kb
+
+trying URL 'http://bioconductor.org/packages/2.14/bioc/src/contrib/Rsamtools_1.16.1.tar.gz'
+Content type 'application/x-gzip' length 2937488 bytes (2.8 Mb)
+opened URL
+==================================================
+downloaded 2.8 Mb
+
+trying URL 'http://bioconductor.org/packages/2.14/bioc/src/contrib/GenomicAlignments_1.0.6.tar.gz'
+Content type 'application/x-gzip' length 1936108 bytes (1.8 Mb)
+opened URL
+==================================================
+downloaded 1.8 Mb
+
+trying URL 'http://bioconductor.org/packages/2.14/bioc/src/contrib/GenomicRanges_1.16.4.tar.gz'
+Content type 'application/x-gzip' length 576583 bytes (563 Kb)
+opened URL
+==================================================
+downloaded 563 Kb
+
+trying URL 'http://bioconductor.org/packages/2.14/bioc/src/contrib/Biostrings_2.32.1.tar.gz'
+Content type 'application/x-gzip' length 1503458 bytes (1.4 Mb)
+opened URL
+==================================================
+downloaded 1.4 Mb
+
+trying URL 'http://bioconductor.org/packages/2.14/bioc/src/contrib/rtracklayer_1.24.2.tar.gz'
+Content type 'application/x-gzip' length 1337492 bytes (1.3 Mb)
+opened URL
+==================================================
+downloaded 1.3 Mb
+
+trying URL 'http://bioconductor.org/packages/2.14/bioc/src/contrib/biomaRt_2.20.0.tar.gz'
+Content type 'application/x-gzip' length 276933 bytes (270 Kb)
+opened URL
+==================================================
+downloaded 270 Kb
+
+trying URL 'http://bioconductor.org/packages/2.14/bioc/src/contrib/GenomicFeatures_1.16.2.tar.gz'
+Content type 'application/x-gzip' length 765846 bytes (747 Kb)
+opened URL
+==================================================
+downloaded 747 Kb
+
+trying URL 'http://bioconductor.org/packages/2.14/bioc/src/contrib/AnnotationDbi_1.26.0.tar.gz'
+Content type 'application/x-gzip' length 4253508 bytes (4.1 Mb)
+opened URL
+==================================================
+downloaded 4.1 Mb
+
+* installing *source* package ¡base64enc¢ ...
+** package ¡base64enc¢ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c base64.c -o base64.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c uriencode.c -o uriencode.o
+gcc -std=gnu99 -shared -L/usr/local/lib64 -o base64enc.so base64.o uriencode.o -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/base64enc/libs
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (base64enc)
+* installing *source* package ¡iterators¢ ...
+** package ¡iterators¢ successfully unpacked and MD5 sums checked
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (iterators)
+* installing *source* package ¡checkmate¢ ...
+** package ¡checkmate¢ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c all_missing.c -o all_missing.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c all_nchar.c -o all_nchar.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c any_missing.c -o any_missing.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c assertions.c -o assertions.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c bounds.c -o bounds.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c checks.c -o checks.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c cmessages.c -o cmessages.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c comps.c -o comps.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c helper.c -o helper.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c is_integerish.c -o is_integerish.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c qassert.c -o qassert.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c qtest.c -o qtest.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c rules.c -o rules.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c which_first.c -o which_first.o
+gcc -std=gnu99 -shared -L/usr/local/lib64 -o checkmate.so all_missing.o all_nchar.o any_missing.o assertions.o bounds.o checks.o cmessages.o comps.o helper.o is_integerish.o qassert.o qtest.o rules.o which_first.o -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/checkmate/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (checkmate)
+* installing *source* package ¡brew¢ ...
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (brew)
+* installing *source* package ¡XVector¢ ...
+** libs
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c IRanges_stubs.c -o IRanges_stubs.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c Ocopy_byteblocks.c -o Ocopy_byteblocks.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c R_init_XVector.c -o R_init_XVector.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c SharedDouble_class.c -o SharedDouble_class.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c SharedInteger_class.c -o SharedInteger_class.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c SharedRaw_class.c -o SharedRaw_class.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c SharedVector_class.c -o SharedVector_class.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c XRawList_comparison.c -o XRawList_comparison.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c XVectorList_class.c -o XVectorList_class.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c XVector_class.c -o XVector_class.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c slice_methods.c -o slice_methods.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c vector_copy.c -o vector_copy.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c view_summarization_methods.c -o view_summarization_methods.o
+gcc -std=gnu99 -shared -L/usr/local/lib64 -o XVector.so IRanges_stubs.o Ocopy_byteblocks.o R_init_XVector.o SharedDouble_class.o SharedInteger_class.o SharedRaw_class.o SharedVector_class.o XRawList_comparison.o XVectorList_class.o XVector_class.o slice_methods.o vector_copy.o view_summarization_methods.o -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/XVector/libs
+** R
+** inst
+** preparing package for lazy loading
+Creating a generic function for ¡toString¢ from package ¡base¢ in package ¡XVector¢
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (XVector)
+* installing *source* package ¡zlibbioc¢ ...
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+mkdir -p "/usr/local/lib64/R/library/zlibbioc/include"
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c R_init_zlibbioc.c -o R_init_zlibbioc.o
+gcc -std=gnu99 -shared -L/usr/local/lib64 -o zlibbioc.so R_init_zlibbioc.o -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/zlibbioc/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (zlibbioc)
+* installing *source* package ¡XML¢ ...
+** package ¡XML¢ successfully unpacked and MD5 sums checked
+checking for gcc... gcc
+checking for C compiler default output file name... 
+rm: cannot remove 'a.out.dSYM': Is a directory
+a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for sed... /usr/bin/sed
+checking for pkg-config... /usr/bin/pkg-config
+checking for xml2-config... /usr/bin/xml2-config
+USE_XML2 = yes
+SED_EXTENDED_ARG: -E
+Minor 9, Patch 1 for 2.9.1
+Located parser file -I/usr/include/libxml2/parser.h
+Checking for 1.8:  -I/usr/include/libxml2
+Using libxml2.*
+checking for gzopen in -lz... yes
+checking for xmlParseFile in -lxml2... yes
+checking for xmlHashSize in -lxml2... yes
+Using built-in xmlHashSize
+Checking DTD parsing (presence of externalSubset)...
+checking for xmlHashSize in -lxml2... yes
+Found xmlHashSize
+checking for xmlOutputBufferCreateBuffer in -lxml2... yes
+have xmlOutputBufferCreateBuffer()
+checking for xmlDocDumpFormatMemoryEnc in -lxml2... yes
+checking libxml/xmlversion.h usability... yes
+checking libxml/xmlversion.h presence... yes
+checking for libxml/xmlversion.h... yes
+Expat:  FALSE
+Checking for return type of xmlHashScan element routine.
+No return value for xmlHashScan
+xmlNs has a context field
+Checking for cetype_t enumeration
+Using recent version of R with cetype_t enumeration type for encoding
+checking for xmlsec1-config... no
+nodegc default 
+xml-debug default 
+Version has XML_WITH_ZLIB
+Version has xmlHasFeature()
+
+****************************************
+Configuration information:
+
+Libxml settings
+
+libxml include directory: -I/usr/include/libxml2
+libxml library directory: -lxml2 -lz -lm -ldl -lz  -lxml2
+libxml 2:                 -DLIBXML2=1
+
+Compilation flags:         -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1 
+Link flags:               -lxml2 -lz -lm -ldl -lz  -lxml2
+
+****************************************
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating R/supports.R
+config.status: creating inst/scripts/RSXML.csh
+config.status: creating inst/scripts/RSXML.bsh
+** libs
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c DocParse.c -o DocParse.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c EventParse.c -o EventParse.o
+EventParse.c: In function ¡RS_XML_textHandler¢:
+EventParse.c:419:44: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  if(s == (XML_Char*)NULL || s[0] == (XML_Char)NULL || len == 0 
+                                            ^
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c ExpatParse.c -o ExpatParse.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c HTMLParse.c -o HTMLParse.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c NodeGC.c -o NodeGC.o
+NodeGC.c: In function ¡R_xmlFreeDoc¢:
+NodeGC.c:40:134: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   if(doc && !IS_NOT_OUR_DOC_TO_TOUCH(doc)) {
+                                                                                                                                      ^
+NodeGC.c: In function ¡initDocRefCounter¢:
+NodeGC.c:178:12: warning: assignment makes integer from pointer without a cast [enabled by default]
+     val[1] = R_MEMORY_MANAGER_MARKER;
+            ^
+NodeGC.c: In function ¡incrementDocRefBy¢:
+NodeGC.c:185:136: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     if(!doc || IS_NOT_OUR_DOC_TO_TOUCH(doc))
+                                                                                                                                        ^
+NodeGC.c: In function ¡getNodeCount¢:
+NodeGC.c:213:164: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   if(!node || IS_NOT_OUR_NODE_TO_TOUCH(node))
+                                                                                                                                                                    ^
+NodeGC.c: In function ¡internal_incrementNodeRefCount¢:
+NodeGC.c:229:166: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     if(!node || IS_NOT_OUR_NODE_TO_TOUCH(node) || !node->_private)
+                                                                                                                                                                      ^
+NodeGC.c: In function ¡R_getXMLRefCount¢:
+NodeGC.c:240:166: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     if(!node || IS_NOT_OUR_NODE_TO_TOUCH(node) || !node->_private)
+                                                                                                                                                                      ^
+NodeGC.c: In function ¡checkDescendantsInR¢:
+NodeGC.c:249:178: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     if(!node && (process || IS_NOT_OUR_NODE_TO_TOUCH(node)))
+                                                                                                                                                                                  ^
+NodeGC.c: In function ¡internal_decrementNodeRefCount¢:
+NodeGC.c:269:166: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     if(!node || IS_NOT_OUR_NODE_TO_TOUCH(node))
+                                                                                                                                                                      ^
+NodeGC.c:307:163: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  if(node->doc && !IS_NOT_OUR_DOC_TO_TOUCH(node->doc)) {
+                                                                                                                                                                   ^
+NodeGC.c: In function ¡clearNodeMemoryManagement¢:
+NodeGC.c:385:99: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  int isOurs = (a = node->_private != &R_XML_NoMemoryMgmt) && (b = ((int *)(node->_private))[1] == (int) &R_XML_MemoryMgrMarker);
+                                                                                                   ^
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c RSDTD.c -o RSDTD.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c RUtils.c -o RUtils.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c Rcatalog.c -o Rcatalog.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c Utils.c -o Utils.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c XMLEventParse.c -o XMLEventParse.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c XMLHashTree.c -o XMLHashTree.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c XMLTree.c -o XMLTree.o
+XMLTree.c: In function ¡R_createXMLNodeRefDirect¢:
+XMLTree.c:1057:197: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   if(addFinalizer > 0 || (addFinalizer < 0 && !IS_NOT_OUR_NODE_TO_TOUCH(node))) {
+                                                                                                                                                                                                     ^
+XMLTree.c: In function ¡R_createXMLNodeRef¢:
+XMLTree.c:1098:71: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   if(addFinalizer && ((node->_private && ((int*)node->_private)[1] == (int) R_MEMORY_MANAGER_MARKER)
+                                                                       ^
+XMLTree.c:1099:173: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+         || !node->doc || (!(IS_NOT_OUR_DOC_TO_TOUCH(node->doc))))) {
+                                                                                                                                                                             ^
+XMLTree.c:1103:9: warning: assignment makes integer from pointer without a cast [enabled by default]
+  val[1] = R_MEMORY_MANAGER_MARKER;
+         ^
+XMLTree.c: In function ¡R_xmlSearchNs¢:
+XMLTree.c:1695:39: warning: comparison of distinct pointer types lacks a cast [enabled by default]
+     xmlDocPtr doc = (xmlDocPtr) r_doc == NULL_USER_OBJECT ? NULL : R_ExternalPtrAddr(r_doc);    
+                                       ^
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c fixNS.c -o fixNS.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c libxmlFeatures.c -o libxmlFeatures.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c schema.c -o schema.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c xmlsecurity.c -o xmlsecurity.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1 -I/usr/local/include    -fpic  -g -O2  -c xpath.c -o xpath.o
+gcc -std=gnu99 -shared -L/usr/local/lib64 -o XML.so DocParse.o EventParse.o ExpatParse.o HTMLParse.o NodeGC.o RSDTD.o RUtils.o Rcatalog.o Utils.o XMLEventParse.o XMLHashTree.o XMLTree.o fixNS.o libxmlFeatures.o schema.o xmlsecurity.o xpath.o -lxml2 -lz -lm -ldl -lz -lxml2 -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/XML/libs
+** R
+** inst
+** preparing package for lazy loading
+Creating a generic function for ¡source¢ from package ¡base¢ in package ¡XML¢
+in method for ¡xmlAttrsToDataFrame¢ with signature ¡"AsIs"¢: no definition for class ???AsIs???
+in method for ¡readKeyValueDB¢ with signature ¡"AsIs"¢: no definition for class ???AsIs???
+in method for ¡readSolrDoc¢ with signature ¡"AsIs"¢: no definition for class ???AsIs???
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (XML)
+* installing *source* package ¡AnnotationDbi¢ ...
+** R
+** inst
+** preparing package for lazy loading
+Creating a new generic function for ¡packageName¢ in package ¡AnnotationDbi¢
+Creating a generic function for ¡toString¢ from package ¡base¢ in package ¡AnnotationDbi¢
+Creating a generic function for ¡rev¢ from package ¡base¢ in package ¡AnnotationDbi¢
+Creating a generic function for ¡subset¢ from package ¡base¢ in package ¡AnnotationDbi¢
+Creating a generic function for ¡head¢ from package ¡utils¢ in package ¡AnnotationDbi¢
+Creating a generic function for ¡tail¢ from package ¡utils¢ in package ¡AnnotationDbi¢
+Creating a generic function for ¡as.list¢ from package ¡base¢ in package ¡AnnotationDbi¢
+Creating a generic function for ¡ls¢ from package ¡base¢ in package ¡AnnotationDbi¢
+Creating a generic function for ¡eapply¢ from package ¡base¢ in package ¡AnnotationDbi¢
+Creating a generic function for ¡exists¢ from package ¡base¢ in package ¡AnnotationDbi¢
+Creating a generic function for ¡sample¢ from package ¡base¢ in package ¡AnnotationDbi¢
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (AnnotationDbi)
+* installing *source* package ¡sendmailR¢ ...
+** package ¡sendmailR¢ successfully unpacked and MD5 sums checked
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (sendmailR)
+* installing *source* package ¡foreach¢ ...
+** package ¡foreach¢ successfully unpacked and MD5 sums checked
+** R
+** demo
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (foreach)
+* installing *source* package ¡BBmisc¢ ...
+** package ¡BBmisc¢ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c getMaxColRowIndex.c -o getMaxColRowIndex.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c getMaxIndex.c -o getMaxIndex.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c which_first.c -o which_first.o
+gcc -std=gnu99 -shared -L/usr/local/lib64 -o BBmisc.so getMaxColRowIndex.o getMaxIndex.o which_first.o -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/BBmisc/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (BBmisc)
+* installing *source* package ¡GenomicRanges¢ ...
+** libs
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c IRanges_stubs.c -o IRanges_stubs.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c R_init_GenomicRanges.c -o R_init_GenomicRanges.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c XVector_stubs.c -o XVector_stubs.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c transcript_utils.c -o transcript_utils.o
+gcc -std=gnu99 -shared -L/usr/local/lib64 -o GenomicRanges.so IRanges_stubs.o R_init_GenomicRanges.o XVector_stubs.o transcript_utils.o -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/GenomicRanges/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (GenomicRanges)
+* installing *source* package ¡Biostrings¢ ...
+** libs
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c BAB_class.c -o BAB_class.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c BitMatrix.c -o BitMatrix.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c IRanges_stubs.c -o IRanges_stubs.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c MIndex_class.c -o MIndex_class.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c PreprocessedTB_class.c -o PreprocessedTB_class.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c R_init_Biostrings.c -o R_init_Biostrings.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c RoSeqs_utils.c -o RoSeqs_utils.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c SparseList_utils.c -o SparseList_utils.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c XStringSetList_class.c -o XStringSetList_class.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c XStringSet_class.c -o XStringSet_class.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c XStringSet_io.c -o XStringSet_io.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c XString_class.c -o XString_class.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c XVector_stubs.c -o XVector_stubs.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c align_needwunsQS.c -o align_needwunsQS.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c align_pairwiseAlignment.c -o align_pairwiseAlignment.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c align_utils.c -o align_utils.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c find_palindromes.c -o find_palindromes.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c gtestsim.c -o gtestsim.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c inject_code.c -o inject_code.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c io_utils.c -o io_utils.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c letter_frequency.c -o letter_frequency.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c lowlevel_matching.c -o lowlevel_matching.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c match_BOC.c -o match_BOC.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c match_BOC2.c -o match_BOC2.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c match_PWM.c -o match_PWM.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c match_pattern.c -o match_pattern.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c match_pattern_boyermoore.c -o match_pattern_boyermoore.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c match_pattern_indels.c -o match_pattern_indels.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c match_pattern_shiftor.c -o match_pattern_shiftor.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c match_pdict.c -o match_pdict.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c match_pdict_ACtree2.c -o match_pdict_ACtree2.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c match_pdict_Twobit.c -o match_pdict_Twobit.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c match_pdict_utils.c -o match_pdict_utils.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c match_reporting.c -o match_reporting.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c matchprobes.c -o matchprobes.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c pmatchPattern.c -o pmatchPattern.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c replace_letter_at.c -o replace_letter_at.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c strutils.c -o strutils.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c translate.c -o translate.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c unstrsplit_methods.c -o unstrsplit_methods.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c utils.c -o utils.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"   -fpic  -g -O2  -c xscat.c -o xscat.o
+gcc -std=gnu99 -shared -L/usr/local/lib64 -o Biostrings.so BAB_class.o BitMatrix.o IRanges_stubs.o MIndex_class.o PreprocessedTB_class.o R_init_Biostrings.o RoSeqs_utils.o SparseList_utils.o XStringSetList_class.o XStringSet_class.o XStringSet_io.o XString_class.o XVector_stubs.o align_needwunsQS.o align_pairwiseAlignment.o align_utils.o find_palindromes.o gtestsim.o inject_code.o io_utils.o letter_frequency.o lowlevel_matching.o match_BOC.o match_BOC2.o match_PWM.o match_pattern.o match_pattern_boyermoore.o match_pattern_indels.o match_pattern_shiftor.o match_pdict.o match_pdict_ACtree2.o match_pdict_Twobit.o match_pdict_utils.o match_reporting.o matchprobes.o pmatchPattern.o replace_letter_at.o strutils.o translate.o unstrsplit_methods.o utils.o xscat.o -lz -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/Biostrings/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+Creating a generic function for ¡setequal¢ from package ¡base¢ in package ¡Biostrings¢
+Creating a generic function for ¡ls¢ from package ¡base¢ in package ¡Biostrings¢
+Creating a new generic function for ¡offset¢ in package ¡Biostrings¢
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (Biostrings)
+* installing *source* package ¡biomaRt¢ ...
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (biomaRt)
+* installing *source* package ¡fail¢ ...
+** package ¡fail¢ successfully unpacked and MD5 sums checked
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (fail)
+* installing *source* package ¡Rsamtools¢ ...
+** libs
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c Biostrings_stubs.c -o Biostrings_stubs.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c IRanges_stubs.c -o IRanges_stubs.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c R_init_Rsamtools.c -o R_init_Rsamtools.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c XVector_stubs.c -o XVector_stubs.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c as_bam.c -o as_bam.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c bam_data.c -o bam_data.o
+g++ -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"   -fpic  -g -O2  -c bam_mate_iter.cpp -o bam_mate_iter.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c bambuffer.c -o bambuffer.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c bamfile.c -o bamfile.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c bcffile.c -o bcffile.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c encode.c -o encode.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c fafile.c -o fafile.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c io_sam.c -o io_sam.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c pileupbam.c -o pileupbam.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools_patch.c -o samtools_patch.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c scan_bam_data.c -o scan_bam_data.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c tabixfile.c -o tabixfile.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c utilities.c -o utilities.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c zip_compression.c -o zip_compression.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bgzf.c -o samtools/bgzf.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/kstring.c -o samtools/kstring.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bam_aux.c -o samtools/bam_aux.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bam.c -o samtools/bam.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bam_import.c -o samtools/bam_import.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/sam.c -o samtools/sam.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bam_index.c -o samtools/bam_index.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bam_pileup.c -o samtools/bam_pileup.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bam_lpileup.c -o samtools/bam_lpileup.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bam_md.c -o samtools/bam_md.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/razf.c -o samtools/razf.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/faidx.c -o samtools/faidx.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/knetfile.c -o samtools/knetfile.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bam_sort.c -o samtools/bam_sort.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/sam_header.c -o samtools/sam_header.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bam_reheader.c -o samtools/bam_reheader.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/kprobaln.c -o samtools/kprobaln.o
+ar -crus libbam.a samtools/bgzf.o samtools/kstring.o samtools/bam_aux.o samtools/bam.o samtools/bam_import.o samtools/sam.o samtools/bam_index.o samtools/bam_pileup.o samtools/bam_lpileup.o samtools/bam_md.o samtools/razf.o samtools/faidx.o samtools/knetfile.o samtools/bam_sort.o samtools/sam_header.o samtools/bam_reheader.o samtools/kprobaln.o samtools_patch.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bcftools/bcf.c -o samtools/bcftools/bcf.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bcftools/vcf.c -o samtools/bcftools/vcf.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bcftools/bcfutils.c -o samtools/bcftools/bcfutils.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bcftools/prob1.c -o samtools/bcftools/prob1.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bcftools/index.c -o samtools/bcftools/index.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bcftools/fet.c -o samtools/bcftools/fet.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c samtools/bcftools/bcf2qcall.c -o samtools/bcftools/bcf2qcall.o
+ar -crus libbcf.a samtools/bcftools/bcf.o samtools/bcftools/vcf.o samtools/bcftools/bcfutils.o samtools/bcftools/prob1.o samtools/bcftools/index.o samtools/bcftools/fet.o samtools/bcftools/bcf2qcall.o samtools_patch.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c tabix/index.c -o tabix/index.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include" -I"/usr/local/lib64/R/library/Biostrings/include"  -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -Dfprintf=_samtools_fprintf -Dexit=_samtools_exit -Dabort=_samtools_abort -I./samtools -I./samtools/bcftools -I./tabix -fpic  -g -O2  -c tabix/bedidx.c -o tabix/bedidx.o
+ar -crus libtabix.a samtools/bgzf.o samtools/kstring.o samtools/knetfile.o tabix/index.o tabix/bedidx.o samtools_patch.o
+mkdir -p "/usr/local/lib64/R/library/Rsamtools/usretc"
+cp ../Rsamtools.mk "/usr/local/lib64/R/library/Rsamtools/usretc"
+mkdir -p "/usr/local/lib64/R/library/Rsamtools/include/samtools/bcftools"
+mkdir -p "/usr/local/lib64/R/library/Rsamtools/include/tabix"
+cp samtools/*.h "/usr/local/lib64/R/library/Rsamtools/include/samtools/"
+cp samtools/bcftools/*h "/usr/local/lib64/R/library/Rsamtools/include/samtools/bcftools/"
+cp tabix/*h "/usr/local/lib64/R/library/Rsamtools/include/tabix/"
+cp samtools/bgzf.h samtools/kstring.h samtools/knetfile.h \
+  "/usr/local/lib64/R/library/Rsamtools/include/tabix/"
+mkdir -p "/usr/local/lib64/R/library/Rsamtools/usrlib"
+cp libbam.a libbcf.a libtabix.a "/usr/local/lib64/R/library/Rsamtools/usrlib"
+g++ -shared -L/usr/local/lib64 -o Rsamtools.so Biostrings_stubs.o IRanges_stubs.o R_init_Rsamtools.o XVector_stubs.o as_bam.o bam_data.o bam_mate_iter.o bambuffer.o bamfile.o bcffile.o encode.o fafile.o io_sam.o pileupbam.o samtools_patch.o scan_bam_data.o tabixfile.o utilities.o zip_compression.o -pthread -fopenmp /usr/local/lib64/R/library/Rsamtools/usrlib/libbam.a /usr/local/lib64/R/library/Rsamtools/usrlib/libbcf.a /usr/local/lib64/R/library/Rsamtools/usrlib/libtabix.a -lz -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/Rsamtools/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (Rsamtools)
+* installing *source* package ¡BatchJobs¢ ...
+** package ¡BatchJobs¢ successfully unpacked and MD5 sums checked
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (BatchJobs)
+* installing *source* package ¡BSgenome¢ ...
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (BSgenome)
+* installing *source* package ¡BiocParallel¢ ...
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (BiocParallel)
+* installing *source* package ¡GenomicAlignments¢ ...
+** libs
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c IRanges_stubs.c -o IRanges_stubs.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c R_init_GenomicAlignments.c -o R_init_GenomicAlignments.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c cigar_utils.c -o cigar_utils.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include"   -fpic  -g -O2  -c encodeOverlaps_methods.c -o encodeOverlaps_methods.o
+gcc -std=gnu99 -shared -L/usr/local/lib64 -o GenomicAlignments.so IRanges_stubs.o R_init_GenomicAlignments.o cigar_utils.o encodeOverlaps_methods.o -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/GenomicAlignments/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (GenomicAlignments)
+* installing *source* package ¡rtracklayer¢ ...
+** libs
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c IRanges_stubs.c -o IRanges_stubs.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c XVector_stubs.c -o XVector_stubs.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c R_init_rtracklayer.c -o R_init_rtracklayer.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c bigWig.c -o bigWig.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c chain_io.c -o chain_io.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c twoBit.c -o twoBit.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c handlers.c -o handlers.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c utils.c -o utils.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/bPlusTree.c -o ucsc/bPlusTree.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/bbiRead.c -o ucsc/bbiRead.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/bbiWrite.c -o ucsc/bbiWrite.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/bwgCreate.c -o ucsc/bwgCreate.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/bwgQuery.c -o ucsc/bwgQuery.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/cirTree.c -o ucsc/cirTree.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/common.c -o ucsc/common.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/dnaseq.c -o ucsc/dnaseq.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/dnautil.c -o ucsc/dnautil.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/errabort.c -o ucsc/errabort.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/hash.c -o ucsc/hash.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/linefile.c -o ucsc/linefile.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/localmem.c -o ucsc/localmem.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/sqlNum.c -o ucsc/sqlNum.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/zlibFace.c -o ucsc/zlibFace.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/dystring.c -o ucsc/dystring.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/hmmstats.c -o ucsc/hmmstats.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/obscure.c -o ucsc/obscure.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/pipeline.c -o ucsc/pipeline.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/rangeTree.c -o ucsc/rangeTree.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/rbTree.c -o ucsc/rbTree.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/memalloc.c -o ucsc/memalloc.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/dlist.c -o ucsc/dlist.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/udc.c -o ucsc/udc.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/net.c -o ucsc/net.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/bits.c -o ucsc/bits.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/twoBit.c -o ucsc/twoBit.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/_cheapcgi.c -o ucsc/_cheapcgi.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/internet.c -o ucsc/internet.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/https.c -o ucsc/https.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/base64.c -o ucsc/base64.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/verbose.c -o ucsc/verbose.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/os.c -o ucsc/os.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/wildcmp.c -o ucsc/wildcmp.o
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG -D_FILE_OFFSET_BITS=64 -I/usr/local/include -I"/usr/local/lib64/R/library/IRanges/include" -I"/usr/local/lib64/R/library/XVector/include"  -g -fpic  -g -O2  -c ucsc/_portimpl.c -o ucsc/_portimpl.o
+gcc -std=gnu99 -shared -L/usr/local/lib64 -o rtracklayer.so IRanges_stubs.o XVector_stubs.o R_init_rtracklayer.o bigWig.o chain_io.o twoBit.o handlers.o utils.o ucsc/bPlusTree.o ucsc/bbiRead.o ucsc/bbiWrite.o ucsc/bwgCreate.o ucsc/bwgQuery.o ucsc/cirTree.o ucsc/common.o ucsc/dnaseq.o ucsc/dnautil.o ucsc/errabort.o ucsc/hash.o ucsc/linefile.o ucsc/localmem.o ucsc/sqlNum.o ucsc/zlibFace.o ucsc/dystring.o ucsc/hmmstats.o ucsc/obscure.o ucsc/pipeline.o ucsc/rangeTree.o ucsc/rbTree.o ucsc/memalloc.o ucsc/dlist.o ucsc/udc.o ucsc/net.o ucsc/bits.o ucsc/twoBit.o ucsc/_cheapcgi.o ucsc/internet.o ucsc/https.o ucsc/base64.o ucsc/verbose.o ucsc/os.o ucsc/wildcmp.o ucsc/_portimpl.o -lz -pthread -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/rtracklayer/libs
+** R
+** data
+** demo
+** inst
+** preparing package for lazy loading
+Creating a generic function for ¡offset¢ from package ¡stats¢ in package ¡rtracklayer¢
+Creating a generic function from function ¡uri¢ in package ¡rtracklayer¢
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (rtracklayer)
+* installing *source* package ¡GenomicFeatures¢ ...
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (GenomicFeatures)
+
+The downloaded source packages are in
+	¡/tmp/RtmpVpZAVp/downloaded_packages¢
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+> library(ggplot2)
+Error in library(ggplot2) : there is no package called ¡ggplot2¢
+> install.packages("ggplot2")
+also installing the dependencies ¡colorspace¢, ¡Rcpp¢, ¡RColorBrewer¢, ¡dichromat¢, ¡munsell¢, ¡labeling¢, ¡plyr¢, ¡gtable¢, ¡reshape2¢, ¡scales¢, ¡proto¢
+
+trying URL 'http://cran.rstudio.com/src/contrib/colorspace_1.2-4.tar.gz'
+Content type 'application/x-gzip' length 242791 bytes (237 Kb)
+opened URL
+==================================================
+downloaded 237 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/Rcpp_0.11.2.tar.gz'
+Content type 'application/x-gzip' length 2004313 bytes (1.9 Mb)
+opened URL
+==================================================
+downloaded 1.9 Mb
+
+trying URL 'http://cran.rstudio.com/src/contrib/RColorBrewer_1.0-5.tar.gz'
+Content type 'application/x-gzip' length 10656 bytes (10 Kb)
+opened URL
+==================================================
+downloaded 10 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/dichromat_2.0-0.tar.gz'
+Content type 'application/x-gzip' length 84320 bytes (82 Kb)
+opened URL
+==================================================
+downloaded 82 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/munsell_0.4.2.tar.gz'
+Content type 'application/x-gzip' length 91026 bytes (88 Kb)
+opened URL
+==================================================
+downloaded 88 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/labeling_0.3.tar.gz'
+Content type 'application/x-gzip' length 10722 bytes (10 Kb)
+opened URL
+==================================================
+downloaded 10 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/plyr_1.8.1.tar.gz'
+Content type 'application/x-gzip' length 393233 bytes (384 Kb)
+opened URL
+==================================================
+downloaded 384 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/gtable_0.1.2.tar.gz'
+Content type 'application/x-gzip' length 19667 bytes (19 Kb)
+opened URL
+==================================================
+downloaded 19 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/reshape2_1.4.tar.gz'
+Content type 'application/x-gzip' length 34121 bytes (33 Kb)
+opened URL
+==================================================
+downloaded 33 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/scales_0.2.4.tar.gz'
+Content type 'application/x-gzip' length 40093 bytes (39 Kb)
+opened URL
+==================================================
+downloaded 39 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/proto_0.3-10.tar.gz'
+Content type 'application/x-gzip' length 530758 bytes (518 Kb)
+opened URL
+==================================================
+downloaded 518 Kb
+
+trying URL 'http://cran.rstudio.com/src/contrib/ggplot2_1.0.0.tar.gz'
+Content type 'application/x-gzip' length 2351447 bytes (2.2 Mb)
+opened URL
+==================================================
+downloaded 2.2 Mb
+
+* installing *source* package ¡colorspace¢ ...
+** package ¡colorspace¢ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include    -fpic  -g -O2  -c colorspace.c -o colorspace.o
+gcc -std=gnu99 -shared -L/usr/local/lib64 -o colorspace.so colorspace.o -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/colorspace/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+Creating a generic function for ¡plot¢ from package ¡graphics¢ in package ¡colorspace¢
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (colorspace)
+* installing *source* package ¡Rcpp¢ ...
+** package ¡Rcpp¢ successfully unpacked and MD5 sums checked
+** libs
+g++ -I/usr/local/lib64/R/include -DNDEBUG -I../inst/include/ -I/usr/local/include    -fpic  -g -O2  -c Date.cpp -o Date.o
+g++ -I/usr/local/lib64/R/include -DNDEBUG -I../inst/include/ -I/usr/local/include    -fpic  -g -O2  -c Module.cpp -o Module.o
+g++ -I/usr/local/lib64/R/include -DNDEBUG -I../inst/include/ -I/usr/local/include    -fpic  -g -O2  -c Rcpp_init.cpp -o Rcpp_init.o
+g++ -I/usr/local/lib64/R/include -DNDEBUG -I../inst/include/ -I/usr/local/include    -fpic  -g -O2  -c api.cpp -o api.o
+g++ -I/usr/local/lib64/R/include -DNDEBUG -I../inst/include/ -I/usr/local/include    -fpic  -g -O2  -c attributes.cpp -o attributes.o
+g++ -I/usr/local/lib64/R/include -DNDEBUG -I../inst/include/ -I/usr/local/include    -fpic  -g -O2  -c barrier.cpp -o barrier.o
+g++ -shared -L/usr/local/lib64 -o Rcpp.so Date.o Module.o Rcpp_init.o api.o attributes.o barrier.o -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/Rcpp/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (Rcpp)
+* installing *source* package ¡RColorBrewer¢ ...
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (RColorBrewer)
+* installing *source* package ¡dichromat¢ ...
+** package ¡dichromat¢ successfully unpacked and MD5 sums checked
+** R
+** data
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (dichromat)
+* installing *source* package ¡labeling¢ ...
+** package ¡labeling¢ successfully unpacked and MD5 sums checked
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (labeling)
+* installing *source* package ¡gtable¢ ...
+** package ¡gtable¢ successfully unpacked and MD5 sums checked
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (gtable)
+* installing *source* package ¡proto¢ ...
+** package ¡proto¢ successfully unpacked and MD5 sums checked
+** R
+** demo
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+   ¡proto.Rnw¢ 
+   ¡protoref.Rnw¢ 
+** testing if installed package can be loaded
+* DONE (proto)
+* installing *source* package ¡munsell¢ ...
+** package ¡munsell¢ successfully unpacked and MD5 sums checked
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (munsell)
+* installing *source* package ¡plyr¢ ...
+** package ¡plyr¢ successfully unpacked and MD5 sums checked
+** libs
+g++ -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/Rcpp/include"   -fpic  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/Rcpp/include"   -fpic  -g -O2  -c loop-apply.cpp -o loop-apply.o
+g++ -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/Rcpp/include"   -fpic  -g -O2  -c split-numeric.cpp -o split-numeric.o
+g++ -shared -L/usr/local/lib64 -o plyr.so RcppExports.o loop-apply.o split-numeric.o -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/plyr/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (plyr)
+* installing *source* package ¡reshape2¢ ...
+** package ¡reshape2¢ successfully unpacked and MD5 sums checked
+** libs
+g++ -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/Rcpp/include"   -fpic  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -I/usr/local/lib64/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib64/R/library/Rcpp/include"   -fpic  -g -O2  -c melt.cpp -o melt.o
+g++ -shared -L/usr/local/lib64 -o reshape2.so RcppExports.o melt.o -L/usr/local/lib64/R/lib -lR
+installing to /usr/local/lib64/R/library/reshape2/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (reshape2)
+* installing *source* package ¡scales¢ ...
+** package ¡scales¢ successfully unpacked and MD5 sums checked
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (scales)
+* installing *source* package ¡ggplot2¢ ...
+** package ¡ggplot2¢ successfully unpacked and MD5 sums checked
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (ggplot2)
+
+The downloaded source packages are in
+	¡/tmp/RtmpVpZAVp/downloaded_packages¢
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+> 
