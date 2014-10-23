@@ -1,9 +1,9 @@
-## Coursera Getting and Cleaning Data, Johns Hopkins  Oct 2014
-## course assignment D. Kenny.  Download and clean data files specified
-## in assignment details.  Output results as a formatted table of original 
-## data with a separate table of summary information by user and data type.
-## Load libraries
-library(plyr)
+## Coursera Getting and Cleaning Data, Johns Hopkins  Oct 2014 course
+## assignment D. Kenny.  Download and clean data files specified in
+## assignment details.  Output results as a formatted table of original data
+## with a separate table of summary information by user and data type.
+ 
+library(plyr) ## Load libraries
 library(dplyr)
 library(tidyr)
 library(stringr)
@@ -40,32 +40,33 @@ stripColumnChars <- function(inStr) { ## A very ugly function to prettify
   return(inStr)
 }
 
-## go to my working directory.  Note: developed using wd on 2nd hard drive of
-## Dell studio 1745 laptop Linux -- Fedora 20.  Your mileage will vary.
-startPoint <- "/media/sdb1/Projects/Rstudio/getting-cleaningdata/course_assignment"
+## Go to my working directory.  Note: developed using wdir on 2nd hard drive of
+## Dell studio 1745 T6600 laptop with Linux -- Fedora 20. 
+## Your mileage will vary.
+startPoint <- 
+  "/media/sdb1/Projects/Rstudio/getting-cleaningdata/course_assignment"
 setwd(startPoint)
 
-## Download files if the unzipped directory isn't present
-dataDirName <- "UCI HAR Dataset"
-if(! file.exists(dataDirName)){
+dataDirName <- "UCI HAR Dataset"  ## Download files if the unzipped
+if(! file.exists(dataDirName)){   ##  directory isn't present
   print("downloading data")
-  dataFileName <- 
-    "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+  dataFileName <- paste0("https://d396qusza40orc.cloudfront.net/",
+                          "getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip")
   destFileName <- "UCI_HAR_Dataset.zip"
-  download.file(dataFileName, destfile = destFileName, method = "curl")
+  download.file(dataFileName, 
+                destfile = destFileName, 
+                method = "curl")
   dateDownLoaded <- date()
-  ## unzip the files and change to directory
   print("decompressing data files")
-  unzip(destFileName)
-  ## cleanup
-  rm("dataFileName", "destFileName")
+  unzip(destFileName)                ## Unzip the files and change to directory
+  rm("dataFileName", "destFileName") ## Cleanup
  }
-##change to data directory
-setwd(dataDirName)
+
+setwd(dataDirName)  ## Change to data directory
 
 print("reading data tables")
 
-## load header/variable label information into tables
+## Load header/variable label information into tables
 dataColNames <- read.table("features.txt", header=F )
 colnames(dataColNames) <- c("index", "names")
 dataColNames$names<- stripColumnChars(as.character(dataColNames$names))
@@ -141,42 +142,37 @@ rm("activityTypeLabels", "dataColNames", "stripColumnChars",
 ## Go back to nominal starting point.
 setwd(startPoint)
 
-## To do: format and somehow also return a pretty and clean data set with 
-## summary (mean) of each measurement for each user by activity name and for 
-## all users by activity name.
+## Format and return a pretty and clean data set with simple summary (mean)
+## of each measurement for each user by activity name and for all users by
+## the activity name.
 
 ## Get vectors of activity and user values
-
 print("getting summary user activity data")
-
 userVector <- unique(combDataTable[,1])
 activityVector <- sort(unique(combDataTable[,2]))
 
-## iterate through larger data table, and concatenate
-## mean values for each user's activities
-for(user in userVector){
-  for(activity in activityVector){ 
-  combDataTable[which(combDataTable$"user ID"==user & 
-                      combDataTable$"activity ID"==activity ), 
-                1:89] %>% ddply(4:89, fun=mean)-> userActivityDF
-  lastRec <- length(userActivityDF[,1])
-  if(!"userActivitySummaryTable" %in% ls()){
+for(user in userVector){                  ## For each user. iterate through the
+  for(activity in activityVector){        ## activity IDs, and push the mean of   
+  combDataTable[which(combDataTable$"user ID"==user &  ## all observations to a
+                      combDataTable$"activity ID"==activity ),    ## separate
+                1:89] %>% ddply(4:89, fun=mean)-> userActivityDF  ## table
+  lastRec <- length(userActivityDF[,1])   ## How many did we read?
+  if(!"userActivitySummaryTable" %in% ls()){ ## If not initialized, start table
     userActivitySummaryTable <- userActivityDF[lastRec,]
-    } else {
-    userActivitySummaryTable <- 
+    } else {                                 ## Otherwise, row bind the summary
+    userActivitySummaryTable <-              ## to the output table.
       rbind(userActivitySummaryTable, userActivityDF[lastRec,])
     }
   
   }
 }
-lastRec <- length(userActivitySummaryTable[,1])
-row.names(userActivitySummaryTable) <- 1:lastRec
+lastRec <- length(userActivitySummaryTable[,1])  ## How many did we get?
+row.names(userActivitySummaryTable) <- 1:lastRec ## Clean row names
 #View(userActivitySummaryTable)
 
-
 ## Cleanup
-rm("lastRec", "userActivityDF", "user", "activity",
-   "activityVector", "userVector", "startPoint")
+rm("lastRec", "userActivityDF", "user", "activity","activityVector", 
+   "userVector", "startPoint")
 
 ## Return data table
 return(combDataTable)
