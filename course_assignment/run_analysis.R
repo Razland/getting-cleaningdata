@@ -42,20 +42,28 @@ stripColumnChars <- function(inStr) { ## A very ugly function to prettify
 
 ## go to my working directory.  Note: developed using wd on 2nd hard drive of
 ## Dell studio 1745 laptop Linux -- Fedora 20.  Your mileage will vary.
-setwd("/media/sdb1/Projects/Rstudio/getting-cleaningdata/course_assignment")
+startPoint <- "/media/sdb1/Projects/Rstudio/getting-cleaningdata/course_assignment"
+setwd(startPoint)
 
 ## Download files if the unzipped directory isn't present
 dataDirName <- "UCI HAR Dataset"
 if(! file.exists(dataDirName)){
+  print("downloading data")
   dataFileName <- 
     "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
   destFileName <- "UCI_HAR_Dataset.zip"
   download.file(dataFileName, destfile = destFileName, method = "curl")
+  dateDownLoaded <- date()
   ## unzip the files and change to directory
+  print("decompressing data files")
   unzip(destFileName)
+  ## cleanup
+  rm("dataFileName", "destFileName")
  }
 ##change to data directory
 setwd(dataDirName)
+
+print("reading data tables")
 
 ## load header/variable label information into tables
 dataColNames <- read.table("features.txt", header=F )
@@ -64,6 +72,16 @@ dataColNames$names<- stripColumnChars(as.character(dataColNames$names))
 
 activityTypeLabels <- read.table("activity_labels.txt")
 colnames(activityTypeLabels) <- c("index", "activity")
+
+## Change activity labels to lower case, remove label punctuation, and fix
+## common grammatical error (xyz axis acceleration levels seem too low for 
+## subjects to actually be engaged in the stated activity)
+activityTypeLabels$activity <- 
+  gsub("_"," ",tolower(activityTypeLabels$activity))
+activityTypeLabels$activity <- 
+  gsub("laying", "lying", activityTypeLabels$activity)
+
+#View(activityTypeLabels)
 
 ## Load train data, naming columns to dataColNames values
 trainXYDataTable <- read.table("train/X_train.txt", header=F )
@@ -78,7 +96,8 @@ trainActivityDataTable <-
 trainActivityDataTable <- 
   mutate(trainActivityDataTable, 
         "activity name" = 
-        as.character(activityTypeLabels$activity[trainActivityDataTable[,1]]))
+          as.character(
+            activityTypeLabels$activity[trainActivityDataTable[,1]]))
 ## Join Train data into a single table
 trainDataTable <- cbind(trainUserDataTable, 
                         trainActivityDataTable, 
@@ -114,19 +133,50 @@ combDataTable <-
 combDataTable <- arrange(combDataTable,combDataTable[,3], combDataTable[,1])
 
 ## Cleanup all interim functions and data.
-rm("activityTypeLabels", "dataColNames", "dataFileName", "destFileName",
+rm("activityTypeLabels", "dataColNames", "stripColumnChars",
    "testActivityDataTable", "testDataTable", "testUserDataTable",
    "testXYZDataTable", "trainActivityDataTable", "trainDataTable",
-   "trainUserDataTable","trainXYDataTable", "dataDirName", 
-   "stripColumnChars")
+   "trainUserDataTable","trainXYDataTable", "dataDirName")
 
 ## Go back to nominal starting point.
-setwd("/media/sdb1/Projects/Rstudio/getting-cleaningdata/course_assignment")
+setwd(startPoint)
 
 ## To do: format and somehow also return a pretty and clean data set with 
 ## summary (mean) of each measurement for each user by activity name and for 
 ## all users by activity name.
 
+## Get vectors of activity and user values
+
+print("getting summary user activity data")
+
+userVector <- unique(combDataTable[,1])
+activityVector <- sort(unique(combDataTable[,2]))
+
+## iterate through larger data table, and concatenate
+## mean values for each user's activities
+for(user in userVector){
+  for(activity in activityVector){ 
+  combDataTable[which(combDataTable$"user ID"==user & 
+                      combDataTable$"activity ID"==activity ), 
+                1:89] %>% ddply(4:89, fun=mean)-> userActivityDF
+  lastRec <- length(userActivityDF[,1])
+  if(!"userActivitySummaryTable" %in% ls()){
+    userActivitySummaryTable <- userActivityDF[lastRec,]
+    } else {
+    userActivitySummaryTable <- 
+      rbind(userActivitySummaryTable, userActivityDF[lastRec,])
+    }
+  
+  }
+}
+lastRec <- length(userActivitySummaryTable[,1])
+row.names(userActivitySummaryTable) <- 1:lastRec
+#View(userActivitySummaryTable)
+
+
+## Cleanup
+rm("lastRec", "userActivityDF", "user", "activity",
+   "activityVector", "userVector", "startPoint")
 
 ## Return data table
 return(combDataTable)
