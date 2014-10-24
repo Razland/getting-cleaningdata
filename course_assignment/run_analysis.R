@@ -175,4 +175,6 @@ rm("lastRec", "userActivityDF", "user", "activity","activityVector",
    "userVector", "startPoint")
 
 ## Return data table
-return(combDataTable)
+#return(combDataTable)
+## Change to summary table for submitting assignment
+return(userActivitySummaryTable)
