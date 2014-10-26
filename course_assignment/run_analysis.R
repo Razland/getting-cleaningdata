@@ -1,16 +1,16 @@
-## Coursera Getting and Cleaning Data, Johns Hopkins  Oct 2014 course
-## assignment D. Kenny.  Download and clean data files specified in
-## assignment details.  Output results as a formatted table of original data
-## with a separate table of summary information by user and data type.
+## Coursera Getting and Cleaning Data, Johns Hopkins  Oct 2014. Course
+## assignment. Download and clean data files specified in assignment details.
+## Output results as a formatted table of original data with a separate table
+## of summary information (mean) by user and data type.  D. Kenny.
  
-library(plyr) ## Load libraries
+library(plyr)                                 ## Load libraries
 library(dplyr)
 library(tidyr)
 library(stringr)
 
-stripColumnChars <- function(inStr) { ## A very ugly function to prettify 
-  inStr <- tolower(inStr)             ## variable names for the output table
-  inStr <- gsub("\\,|\\(|\\)|\\-", "", inStr)
+stripColumnChars <- function(inStr) {         ## A very ugly function to
+  inStr <- tolower(inStr)                     ## prettify input data variable
+  inStr <- gsub("\\,|\\(|\\)|\\-", "", inStr) ## names for the output table
   inStr <- gsub("bodybody", " body ", inStr)
   inStr <- gsub("tgravity", "time domain gravity", inStr)
   inStr <- gsub("f {0,9}body", "frequency domain body", inStr)
@@ -36,145 +36,177 @@ stripColumnChars <- function(inStr) { ## A very ugly function to prettify
   inStr <- gsub("anglet", "angular t", inStr)
   inStr <- gsub(" {2,9}", " ", inStr)
   inStr <- str_trim(inStr)
-#  View(inStr)  ## debug View is better than print statements
+#  View(inStr)                                 ## debug View
   return(inStr)
 }
 
-## Go to my working directory.  Note: developed using wdir on 2nd hard drive of
-## Dell studio 1745 T6600 laptop with Linux -- Fedora 20. 
+## Go to my working directory.  Note: developed using wrkdir on 2nd hard drive
+## of Dell studio 1745 T6600 laptop with 64 bit Linux (Fedora 20). 
 ## Your mileage will vary.
-startPoint <- 
+startPoint <-   ## !! Modify the following line to your working directory !! ##
   "/media/sdb1/Projects/Rstudio/getting-cleaningdata/course_assignment"
+if(!file.exists(startPoint)){                  ## If this isn't on my PC, tell
+  printf(                                      ## the user to edit this script.
+    paste0("Directory not found. ",            ## and quit.
+           "Modify startPoint variable in run_analysis.R"))
+  return(0)                                    
+  }
 setwd(startPoint)
 
-dataDirName <- "UCI HAR Dataset"  ## Download files if the unzipped
-if(! file.exists(dataDirName)){   ##  directory isn't present
+dataDirName <- "UCI HAR Dataset"               ## Download files if the unzipped
+if(! file.exists(dataDirName)){                ## data directory isn't present
   print("downloading data")
-  dataFileName <- paste0("https://d396qusza40orc.cloudfront.net/",
-                          "getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip")
+  dataFileName <- 
+    paste0("https://d396qusza40orc.cloudfront.net/",
+           "getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip")
   destFileName <- "UCI_HAR_Dataset.zip"
   download.file(dataFileName, 
                 destfile = destFileName, 
                 method = "curl")
   dateDownLoaded <- date()
   print("decompressing data files")
-  unzip(destFileName)                ## Unzip the files and change to directory
-  rm("dataFileName", "destFileName") ## Cleanup
+  unzip(destFileName)                          ## Unzip the files and change
+                                               ## to new directory.
+  rm("dataFileName", "destFileName")           ## Cleanup
  }
 
-setwd(dataDirName)  ## Change to data directory
+setwd(dataDirName)                             ## Change to data directory
 
 print("reading data tables")
 
-## Load header/variable label information into tables
-dataColNames <- read.table("features.txt", header=F )
-colnames(dataColNames) <- c("index", "names")
-dataColNames$names<- stripColumnChars(as.character(dataColNames$names))
+dataColNames <-                                ## Load header/variable label
+  read.table("features.txt", header=F )        ## information into tables
+colnames(dataColNames) <- 
+  c("index", "names")
+dataColNames$names<-                           ## Send column names to 
+  stripColumnChars(as.character(               ## formatting function
+      dataColNames$names)) 
 
-activityTypeLabels <- read.table("activity_labels.txt")
-colnames(activityTypeLabels) <- c("index", "activity")
+activityTypeLabels <- 
+  read.table("activity_labels.txt")
+colnames(activityTypeLabels) <- 
+  c("index", "activity")
 
-## Change activity labels to lower case, remove label punctuation, and fix
-## common grammatical error (xyz axis acceleration levels seem too low for 
-## subjects to actually be engaged in the stated activity)
-activityTypeLabels$activity <- 
-  gsub("_"," ",tolower(activityTypeLabels$activity))
-activityTypeLabels$activity <- 
-  gsub("laying", "lying", activityTypeLabels$activity)
+activityTypeLabels$activity <-                 ## Change activity labels to
+  gsub("_",                                    ## lower case, remove label
+       " ",                                    ## punctuation, and fix common
+       tolower(activityTypeLabels$activity))   ## grammatical error (xyz axis 
+activityTypeLabels$activity <-                 ## acceleration levels seem too
+  gsub("laying",                               ## low for subjects to actually 
+       "lying",                                ## be engaged in the stated
+       activityTypeLabels$activity)            ## activity)
+#View(activityTypeLabels)                      ## debug commented out
 
-#View(activityTypeLabels)
-
-## Load train data, naming columns to dataColNames values
-trainXYDataTable <- read.table("train/X_train.txt", header=F )
-colnames(trainXYDataTable)<- dataColNames[1:561,2]
-## Load train user and activity data into tables, 
-## naming User ID and Activity variables
-trainUserDataTable <- 
-  rename(read.table("train/subject_train.txt", header=F ), "user ID" = V1)
+trainXYDataTable <-                            ## Load train data, naming 
+  read.table("train/X_train.txt", header=F )   ## columns to dataColNames 
+colnames(trainXYDataTable) <-                  ## values.  
+  dataColNames[1:561,2]
+ 
+trainUserDataTable <-                          ## Load train user and activity
+  rename(read.table("train/subject_train.txt", ## data into tables, naming User
+                    header=F ),                ## ID and Activity variables at
+        "user ID" = V1)                        ## column headings.
 trainActivityDataTable <- 
-  rename(read.table("train/y_train.txt", header=F ), "activity ID" = V1)
-## Add column for Activity Name from activityTypeLabels
-trainActivityDataTable <- 
-  mutate(trainActivityDataTable, 
+  rename(read.table("train/y_train.txt", 
+                    header=F ), 
+         "activity ID" = V1)
+trainActivityDataTable <-                      ## Add column for Activity Name
+  mutate(trainActivityDataTable,               ## from activityTypeLabels
         "activity name" = 
           as.character(
             activityTypeLabels$activity[trainActivityDataTable[,1]]))
-## Join Train data into a single table
-trainDataTable <- cbind(trainUserDataTable, 
-                        trainActivityDataTable, 
-                        trainXYDataTable )
+trainDataTable <-                              ## Join train data into a single
+  cbind(trainUserDataTable,                    ## table, with Subject ID,
+        trainActivityDataTable,                ## Activity data, and
+        trainXYDataTable )                     ## trainXY computed values
 
+testXYZDataTable <-                            ## Load test data, naming
+  read.table("test/X_test.txt", header=F )     ## columns to dataColNames
+colnames(testXYZDataTable) <-                  ## values
+  dataColNames[1:561,2]
 
-## Load test data, naming columns to dataColNames values
-testXYZDataTable <- read.table("test/X_test.txt", header=F )
-colnames(testXYZDataTable)<- dataColNames[1:561,2]
-## Load test user and activity data, naming User ID and Activity variables
-testUserDataTable <- 
-  rename(read.table("test/subject_test.txt", header=F ), "user ID" = V1)
+testUserDataTable <-                           ## Load test user and activity
+  rename(read.table("test/subject_test.txt",   ## data, naming User ID and 
+                    header=F ),                ## Activity variables
+         "user ID" = V1)                       ##
 testActivityDataTable <- 
-  rename(read.table("test/y_test.txt", header=F ), "activity ID" = V1)
-## Add column for Activity Name from activityTypeLabels
-testActivityDataTable <- 
-  mutate(testActivityDataTable, 
-         "activity name" = 
-          as.character(activityTypeLabels$activity[testActivityDataTable[,1]]))
+  rename(read.table("test/y_test.txt", 
+                    header=F ), 
+        "activity ID" = V1)
+testActivityDataTable <-                       ## Add column for Activity Name
+  mutate(testActivityDataTable,                ## from activityTypeLabels
+         "activity name" =                     ##
+          as.character(
+            activityTypeLabels$activity[
+              testActivityDataTable[,1]]))
 
-## Join Test data to a single table
-testDataTable <- 
-  cbind(testUserDataTable, testActivityDataTable, testXYZDataTable)
-## Concatenate Test and Train data tables to one
-combDataTable <- rbind(testDataTable, trainDataTable)
+testDataTable <-                               ## Join Test data to a single 
+  cbind(testUserDataTable,                     ## table, including Subject ID,
+        testActivityDataTable,                 ## Activity data, and
+        testXYZDataTable )                     ## testXY computed values
 
-## Gross extraction of only the columns with std dev, user, activity, and mean 
-## data summaries.  List of both table column names.
+combDataTable <-                               ## Concatenate Test and Train
+  rbind(testDataTable,                         ## data tables to one object.
+        trainDataTable)                        ## Too many variables!
+
+combDataTable <-                               ## Gross extraction of only the
+  combDataTable[,                              ## columns with std dev, user, 
+      grep("mean|deviation|user|activity",     ## activity, and mean data 
+            names(combDataTable))]             ## summaries. List of both table
+                                               ## column names.
+#View(names(combDataTable))                    ## debug
 combDataTable <- 
-  combDataTable[,grep("mean|deviation|user|activity",names(combDataTable))]
+  arrange(combDataTable,
+          combDataTable[,3], 
+          combDataTable[,1])
 
-#View(names(combDataTable))  ## Debugging: better than print statements
-combDataTable <- arrange(combDataTable,combDataTable[,3], combDataTable[,1])
+rm("activityTypeLabels", "dataColNames",       ## Cleanup all interim functions 
+   "stripColumnChars", "testActivityDataTable",## and data. 
+   "testDataTable", "testUserDataTable",
+   "testXYZDataTable", "trainActivityDataTable", 
+   "trainDataTable", "trainUserDataTable",
+   "trainXYDataTable", "dataDirName")
 
-## Cleanup all interim functions and data.
-rm("activityTypeLabels", "dataColNames", "stripColumnChars",
-   "testActivityDataTable", "testDataTable", "testUserDataTable",
-   "testXYZDataTable", "trainActivityDataTable", "trainDataTable",
-   "trainUserDataTable","trainXYDataTable", "dataDirName")
-
-## Go back to nominal starting point.
-setwd(startPoint)
+setwd(startPoint)                              ## Go back to nominal starting 
+                                               ## point.
 
 ## Format and return a pretty and clean data set with simple summary (mean)
 ## of each measurement for each user by activity name and for all users by
 ## the activity name.
 
-## Get vectors of activity and user values
-print("getting summary user activity data")
-userVector <- unique(combDataTable[,1])
+print("getting summary user activity data")    ## Get vectors of activity and user
+userVector <- unique(combDataTable[,1])        ## values
 activityVector <- sort(unique(combDataTable[,2]))
 
-for(user in userVector){                  ## For each user. iterate through the
-  for(activity in activityVector){        ## activity IDs, and push the mean of   
-  combDataTable[which(combDataTable$"user ID"==user &  ## all observations to a
-                      combDataTable$"activity ID"==activity ),    ## separate
-                1:89] %>% ddply(4:89, fun=mean)-> userActivityDF  ## table
-  lastRec <- length(userActivityDF[,1])   ## How many did we read?
-  if(!"userActivitySummaryTable" %in% ls()){ ## If not initialized, start table
-    userActivitySummaryTable <- userActivityDF[lastRec,]
-    } else {                                 ## Otherwise, row bind the summary
-    userActivitySummaryTable <-              ## to the output table.
-      rbind(userActivitySummaryTable, userActivityDF[lastRec,])
-    }
-  
-  }
+for(user in userVector){                       ## For each user. iterate  
+  for(activity in activityVector){             ## through the activity IDs, and
+  combDataTable[which(                         ## push the mean of all
+        combDataTable$"user ID"==user &        ## observations to a 
+        combDataTable$"activity ID"==activity) ## separate table. Use
+                   ,1:89] %>%                  ## command chainingto fill the 
+                ddply(4:89, fun=mean)->        ## output data frame with all 
+                  userActivityDF               ## rows, including the new mean
+  lastRec <- length(userActivityDF[,1])        ## summary. If not initialized,
+  if(!"userActivitySummaryTable" %in% ls()){   ## start an output table
+    userActivitySummaryTable <-                ## instance using only the last,
+      userActivityDF[lastRec,]                 ## newest observation (mean)
+    }                                          ## computed by ddply. Otherwise,
+  else {                                       ## append the last row of this
+    userActivitySummaryTable <-                ## iteration of the summary to
+      rbind(userActivitySummaryTable,          ## the output data frame. 
+            userActivityDF[lastRec,])          ## Discard the original data 
+    }                                          ## observations (rows) kept by 
+  }                                            ## ddply. 
 }
-lastRec <- length(userActivitySummaryTable[,1])  ## How many did we get?
-row.names(userActivitySummaryTable) <- 1:lastRec ## Clean row names
-#View(userActivitySummaryTable)
+lastRec <-                                     ## How many rows of mean did we
+  length(userActivitySummaryTable[,1])         ## get?
+row.names(userActivitySummaryTable) <- 
+  1:lastRec                                    ## Clean row names from View.
+#View(userActivitySummaryTable)                ## uncomment for debug
 
-## Cleanup
-rm("lastRec", "userActivityDF", "user", "activity","activityVector", 
+rm("lastRec", "userActivityDF", "user",        ## Cleanup
+   "activity", "activityVector", 
    "userVector", "startPoint")
 
-## Return data table
-#return(combDataTable)
-## Change to summary table for submitting assignment
-return(userActivitySummaryTable)
+#return(combDataTable)                         ## Return full data table
+return(userActivitySummaryTable)               ## Return summary table
